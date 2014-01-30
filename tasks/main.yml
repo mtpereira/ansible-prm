@@ -1,0 +1,4 @@
+---
+- include: pkg.yml tags=pkg
+- include: gem.yml tags=gem
+- include: repo.yml tags=repo

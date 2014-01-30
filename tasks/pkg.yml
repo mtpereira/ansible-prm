@@ -1,0 +1,9 @@
+---
+- name: pkg - install (state={{ prm_pkg_state }}) ruby
+  apt: pkg=ruby1.9.3 state={{ prm_pkg_state }} update_cache=yes cache_valid_time=3600
+
+- name: pkg - install (state={{ prm_pkg_state }}) gpg
+  apt: pkg=gnupg state={{ prm_pkg_state }}
+
+- name: pkg - install (state={{ prm_pkg_state }}) rsync
+  apt: pkg=rsync state={{ prm_pkg_state }}

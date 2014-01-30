@@ -1,0 +1,8 @@
+---
+- name: repo - create deb repository
+  command: prm --type {{ prm_repo_type }} --release {{ prm_repo_release }} --component {{ prm_repo_deb_component }} --arch {{ prm_repo_arch }} --path {{ prm_repo_path }} --directory {{ prm_repo_directory }} --gpg {{ prm_repo_gpg }}
+  when: prm_repo_deb_nocache == "no"
+
+- name: repo - create deb repository without caching md5sums
+  command: prm --type {{ prm_repo_type }} --release {{ prm_repo_release }} --component {{ prm_repo_deb_component }} --arch {{ prm_repo_arch }} --path {{ prm_repo_path }} --directory {{ prm_repo_directory }} --gpg {{ prm_repo_gpg }} --nocache
+  when: prm_repo_deb_nocache == "yes"

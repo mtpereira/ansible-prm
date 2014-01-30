@@ -1,0 +1,20 @@
+---
+# tasks/pkg.yml
+prm_pkg_state: "present"
+
+# tasks/gem.yml
+prm_gem_state: "present"
+prm_gem_user_install: "no"
+
+# tasks/repo-{deb,rpm}.yml
+prm_repo_type: "deb"
+prm_repo_release: "wheezy"
+prm_repo_path: /srv/repo
+prm_repo_directory: /srv/repo
+prm_repo_gpg: "repo"
+prm_repo_arch: "amd64"
+
+# tasks/repo-deb.yml
+prm_repo_deb_component: "main"
+prm_repo_deb_nocache: "no"
+

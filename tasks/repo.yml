@@ -1,0 +1,9 @@
+---
+- name: repo - sync local files with repo
+  copy: src=files/repo/ dest={{ prm_repo_directory }}
+
+- include: repo-deb.yml tags=deb
+  when: prm_repo_type == "deb"
+
+- include: repo-rpm.yml tags=rpm
+  when: prm_repo_type == "rpm"

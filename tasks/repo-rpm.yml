@@ -1,0 +1,4 @@
+---
+- name: repo - create rpm repository
+  command: prm --type {{ prm_repo_type }} --release {{ prm_repo_release }} --arch {{ prm_repo_arch }} --path {{ prm_repo_path }} --directory {{ prm_repo_directory }} --gpg {{ prm_repo_gpg }}
+  when: prm_repo_type == "rpm"

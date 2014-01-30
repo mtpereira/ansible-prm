@@ -1,0 +1,3 @@
+---
+- name: gem - install (state={{ prm_gem_state }}) prm
+  gem: name=prm state={{ prm_gem_state }} user_install={{ prm_gem_user_install }}

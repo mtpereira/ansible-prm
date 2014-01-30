@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Manuel Tiago Pereira
+  description: Ansible role that creates and synchronizes a .deb or .rpm repository using **PRM** (https://github.com/dnbert/prm).
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - packaging
+dependencies: []
+
