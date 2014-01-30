@@ -32,10 +32,13 @@ License
 
 MIT
 
-Author Information
-------------------
+Thanks
+------
 
 Thanks to @dnbert for creating PRM!
+
+Author Information
+------------------
 
 [GitHub project page](https://github.com/mtpereira/ansible-passenger)
 
